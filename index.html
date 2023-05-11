@@ -1,0 +1,50 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IRIS SPECIES IDENTIFIER</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+     <style>
+        body {
+         background-image: url('/static/images/iris3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+             }
+     </style>
+    <h1 class="logo" style='color:rgb(233, 233, 241)'>Iris Species Classifier</h1>
+     <div class="content" style='color:rgb(237, 235, 241)'><b>
+         
+         <p><h4>The aim is to classify iris flowers among three species :<br><br>(Setosa, Versicolor, or Virginica) <br><br>from sepals' and petals' length and width measurements.</h4></p>
+        </b>
+    </div> 
+
+     <!-- Input Form -->
+<div  class="input form" style='color:honeydew'>
+    <form action="{{url_for('predict')}}"method="post">
+
+      <h1 id="heading">Iris Classifier</h1>
+
+      <h3 id="input">Enter sepal length</h3>
+      <input type="text" name="SL" placeholder="Sepal length"> <br>
+
+      <h3 id="input">Enter sepal width</h3>
+      <input type="text" name="SW" placeholder="Sepal width"><br>
+
+      <h3 id="input">Enter Petal length</h3>
+      <input type="text" name="PL" placeholder="Petal Length"><br>
+      
+      <h3 id="input">Enter Petal width</h3>
+      <input type="text" name="PW" placeholder="Petal width"><br>
+
+      <button id="submit" type="submit" value='predict'>Submit</button>
+    </form>
+   
+       
+      </div>
+
+    
+</body>
+</html>
+</html>
